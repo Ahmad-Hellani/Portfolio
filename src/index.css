@@ -1,0 +1,12 @@
+@import "tailwindcss";
+body { @apply bg-slate-950 text-slate-100 antialiased; }
+
+@theme {
+  --color-slate-950: #050505;
+  --color-slate-900: #0e0e10;
+  --color-slate-800: #1a1a1d;
+  --color-slate-700: #2a2a2e;
+  --color-slate-400: #a1a1aa;
+  --color-slate-300: #d4d4d8;
+}
+html { scroll-behavior: smooth; }
