@@ -5,4 +5,5 @@ export const profile = {
   email: 'ahmadhellani7@gmail.com',
   github: 'https://github.com/ahmad-hellani',
   linkedin: 'https://linkedin.com/in/ahmad-hellani',
+  cv: '/Ahmad_Hellani_CV.pdf',
 }
