@@ -15,19 +15,28 @@ export default function Hero() {
         <h1 className="text-4xl font-bold md:text-5xl">{profile.title}</h1>
         <p className="max-w-xl text-slate-300">{profile.bio}</p>
         <Socials />
-        <div className="flex flex-wrap gap-3">
+        <div className="space-y-3">
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="#projects"
+              className="rounded-md bg-emerald-500 px-4 py-2 font-medium text-slate-950 hover:bg-emerald-400"
+            >
+              View projects
+            </a>
+            <a
+              href={profile.cv}
+              download
+              className="inline-flex items-center gap-2 rounded-md border border-slate-700 px-4 py-2 font-medium hover:border-slate-500"
+            >
+              <FaDownload aria-hidden /> Download CV
+            </a>
+          </div>
           <a
-            href="#projects"
-            className="rounded-md bg-emerald-500 px-4 py-2 font-medium text-slate-950 hover:bg-emerald-400"
-          >
-            View projects
-          </a>
-          <a
-            href={profile.cv}
+            href={profile.cvFlutter}
             download
-            className="inline-flex items-center gap-2 rounded-md border border-slate-700 px-4 py-2 font-medium hover:border-slate-500"
+            className="inline-block text-sm text-slate-400 underline-offset-4 hover:text-white hover:underline"
           >
-            <FaDownload aria-hidden /> Download CV
+            Looking for a Flutter developer? Download the Flutter CV
           </a>
         </div>
       </div>
